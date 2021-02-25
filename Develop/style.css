@@ -54,7 +54,11 @@ header {
   min-height: 100px;
 }
 
-.card-footer {
+h2 {
+  text-align: center;
+}
+
+.making {
   text-align: center;
 }
 
@@ -72,6 +76,7 @@ header {
   clear: both;
 }
 
+
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -82,9 +87,8 @@ header {
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
-  margin: 16px 16px 16px 20px;
+  width: 8cm;
   padding: 14px 34px;
-  text-align: center;
   cursor: pointer;
 }
 
