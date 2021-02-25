@@ -22,10 +22,22 @@ generateBtn.addEventListener("click", writePassword);
 // THEN I choose lowercase, uppercase, numeric, and/or special characters
 
 // lowercase
-
+function getRandomLower() {
+  return String.fromCharCode(Math.ceil(Math.random() * 26) + 97)
+}
 // uppercase
+function getRandomUpper() {
+  return String.fromCharCode(Math.ceil(Math.random() * 26) + 97)
+}
 
 // numeric
+function getRandomNumber() {
+  return String.fromCharCode(Math.ceil(Math.random() * 26) + 97)
+}
 
 // special characters
+function getRandomSymbol() {
+  const symbols = '!@#$%^&*';
+  return symbols(Math.ceil(Math.random() * symbols.length)) 
+}
 
