@@ -23,21 +23,25 @@ generateBtn.addEventListener("click", writePassword);
 
 // lowercase
 function getRandomLower() {
-  return String.fromCharCode(Math.ceil(Math.random() * 26) + 97)
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
 }
+console.log(getRandomLower)
+
 // uppercase
 function getRandomUpper() {
-  return String.fromCharCode(Math.ceil(Math.random() * 26) + 97)
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
 }
+console.log(getRandomUpper)
 
 // numeric
 function getRandomNumber() {
-  return String.fromCharCode(Math.ceil(Math.random() * 26) + 97)
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
 }
+console.log(getRandomNumber)
 
 // special characters
 function getRandomSymbol() {
   const symbols = '!@#$%^&*';
-  return symbols(Math.ceil(Math.random() * symbols.length)) 
+  return symbols(Math.ceil(Math.floor() * symbols.length)) 
 }
-
+console.log(getRandomSymbol)
