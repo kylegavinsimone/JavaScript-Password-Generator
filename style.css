@@ -112,6 +112,3 @@ input[type="checkbox"] {
   animation: myanimation 10s infinite;
 }
 
-@media screen and (max-width: 480px) {
-  transform: translateX(0px);
-}
