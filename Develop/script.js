@@ -53,12 +53,10 @@ function generatePassword(lower, upper, number, symbol, length) {
     (item) => Object.values(item)[0]
   );
 
-  // Doesn't have a selected type
   if (typesCount === 0) {
     return "";
   }
 
-  // create a loop
   for (let i = 0; i < length; i += typesCount) {
     typesArr.forEach((type) => {
       const funcName = Object.keys(type)[0];
@@ -88,17 +86,9 @@ function getRandomSymbol() {
   return symbols[Math.floor(Math.random() * symbols.length)];
 }
 
-// SOCIAL PANEL JS
 const floating_btn = document.querySelector(".floating-btn");
 const close_btn = document.querySelector(".close-btn");
 const social_panel_container = document.querySelector(
   ".social-panel-container"
 );
 
-floating_btn.addEventListener("click", () => {
-  social_panel_container.classList.toggle("visible");
-});
-
-close_btn.addEventListener("click", () => {
-  social_panel_container.classList.remove("visible");
-});
